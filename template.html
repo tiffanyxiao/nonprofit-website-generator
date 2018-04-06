@@ -1,0 +1,83 @@
+<html>
+<head>
+  <title> LOREN IPSUM </title>
+  <style>
+  #logo{
+    position:absolute;
+    top:20px;
+    left:10px;
+    height:40px;
+    overflow:hidden;
+    color: #FFFFFF;
+  }
+  body{
+    background-color: #ECECEC;
+  }
+  * {
+      padding: 0;
+      margin: 0;
+      font-family: arial;
+      color: #7f7f7f;
+  }
+  nav{
+      background-color: #90CCF4;
+      text-align: right;
+      padding: 20px;
+  }
+  nav li {
+      display: inline-block;
+      margin: 0 8px;
+      padding-top: 1px;
+  }
+  nav li a{
+      color: white;
+      padding: 11px;
+      text-decoration: none;
+      font-family: arial;
+  }
+  nav li a:hover{
+      background-color: white;
+      color: #233647;
+  }
+  </style>
+  <script>
+    function show(shown, hidden) {
+      document.getElementById(shown).style.display='block';
+      document.getElementById(hidden).style.display='none';
+      return false;
+    }
+  </script>
+</head>
+<body id = "pages">
+<!-- Home Page -->
+<div id="Page1">
+  <nav>
+    <div class="nav-wrapper">
+      <h1 id = "logo">Organization Name</h1>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="#">Home</a></li>
+        <li>  <a href="#" onclick="return show('Page2','Page1');">About</a></li>
+        <li>  <a href="#" onclick="return show('Page3','Page1');">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <center>
+    <br>
+    <img src = "placeholder.png" style="width:700px;height:300px">
+    <h1> Organization Name </h1>
+  </center>
+</div>
+<!-- About -->
+<div id="Page2" style="display:none">
+  Content of page 2
+  <a href="#" onclick="return show('Page1','Page2');">Show page 1</a>
+  <a href="#" onclick="return show('Page3','Page2');">Show page 3</a>
+</div>
+<!-- Contact -->
+<div id="Page3" style="display:none">
+  Content of page 3
+  <a href="#" onclick="return show('Page1','Page3');">Show page 1</a>
+  <a href="#" onclick="return show('Page2','Page3');">Show page 2</a>
+</div>
+</body>
+</html>
