@@ -1,0 +1,67 @@
+#logo{
+  position:absolute;
+  top:20px;
+  left:20px;
+  height:40px;
+  overflow:hidden;
+  color: #C09F80;
+  font-size:2vw;
+}
+
+#org-name2{
+    font-size:5vw;
+    color:#76323F;
+}
+
+#about-header{
+    font-size:5vw;
+    color:#76323F;
+}
+
+#about-descript{
+    margin-left: 5%;
+    margin-right:5%
+}
+
+#founder-pic{
+    width: 50%;
+    height:40%;
+    float:left;
+}
+
+img{
+    width:70%;
+    height:60%;
+}
+
+body{
+  background-color: #D7CEC7;
+}
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Helvetica';
+    color: #565656;
+}
+h2 {
+  color: #C09F80;
+}
+nav{
+    background-color: #FFFFFF;
+    text-align: right;
+    padding: 20px;
+}
+nav li {
+    display: inline-block;
+    margin: 0 8px;
+    padding-top: 1px;
+}
+nav li a{
+    color: #565656;
+    padding: 11px;
+    text-decoration: none;
+}
+nav li a:hover{
+    background-color: white;
+    color: #9FEDD7;
+}

@@ -2,47 +2,7 @@
 <head>
   <title> LOREN IPSUM </title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    #logo{
-      position:absolute;
-      top:20px;
-      left:20px;
-      height:40px;
-      overflow:hidden;
-      color: #C09F80;
-    }
-    body{
-      background-color: #D7CEC7;
-    }
-    * {
-        padding: 0;
-        margin: 0;
-        font-family: 'Helvetica';
-        color: #565656;
-    }
-    h2 {
-      color: #C09F80;
-    }
-    nav{
-        background-color: #FFFFFF;
-        text-align: right;
-        padding: 20px;
-    }
-    nav li {
-        display: inline-block;
-        margin: 0 8px;
-        padding-top: 1px;
-    }
-    nav li a{
-        color: #565656;
-        padding: 11px;
-        text-decoration: none;
-    }
-    nav li a:hover{
-        background-color: white;
-        color: #9FEDD7;
-    }
-  </style>
+  <link rel = "stylesheet" type = "text/css" href = "style.css" />
   <script>
     function show(shown, hidden) {
       document.getElementById(shown).style.display='block';
@@ -56,20 +16,20 @@
 <div id="Page1">
   <nav>
     <div class="nav-wrapper">
-      <h1 id = "logo" style="font-size:2vw;">Organization Name</h1>
+      <h1 id = "logo">Organization Name</h1>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li><a href="#">HOME</a></li>
-        <li>  <a href="#" onclick="return show('Page2','Page1');">ABOUT</a></li>
-        <li>  <a href="#" onclick="return show('Page3','Page1');">CONTACT</a></li>
+        <li><a href="#" onclick="return show('Page2','Page1');">ABOUT</a></li>
+        <li><a href="#" onclick="return show('Page3','Page1');">CONTACT</a></li>
       </ul>
     </div>
   </nav>
     <div>
       <center>
         <br>
-        <img src="placeholder.png" style="width:70%;height:60%">
+        <img src="placeholder.png">
         <br>
-        <h1 style="font-size:5vw;color:#76323F;"> ORGANIZATION NAME </h1>
+        <h1 id = "org-name2"> ORGANIZATION NAME </h1>
         <br>
         <p style = "margin-left: 5%; margin-right:5%"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque imperdiet volutpat ligula, a placerat augue mollis eget. Mauris vitae sapien non tellus tempor dignissim sed eget felis. Pellentesque sem purus, venenatis sit amet ex ut, aliquam ultricies nisi. Vestibulum commodo metus a est aliquam consectetur. Nunc augue lectus, suscipit aliquet justo at, ultricies finibus ipsum. Maecenas varius faucibus pellentesque. Nam condimentum auctor sapien, sit amet dictum dui aliquet a. Etiam lacus augue, faucibus ut finibus et, posuere non dolor. Quisque maximus nisi condimentum diam varius condimentum. Nullam risus leo, mattis quis congue vitae, semper a ex. Cras in velit et mi lacinia fermentum et nec enim. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum vestibulum vehicula justo, et rutrum ipsum efficitur ut. </p>
       </center>
@@ -82,27 +42,27 @@
       <h1 id = "logo" style="font-size:2vw;">Organization Name</h1>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li><a href="#" onclick="return show('Page1','Page2');">HOME</a></li>
-        <li>  <a href="#">ABOUT</a></li>
-        <li>  <a href="#" onclick="return show('Page3','Page2');">CONTACT</a></li>
+        <li><a href="#">ABOUT</a></li>
+        <li><a href="#" onclick="return show('Page3','Page2');">CONTACT</a></li>
       </ul>
     </div>
   </nav>
   <div>
     <center>
       <br>
-      <h1 style="font-size:5vw;color:#76323F;"> ABOUT [ORG NAME] </h1>
+      <h1 id ="about-header"> ABOUT [ORG NAME] </h1>
       <br>
       <h2> Mission Statement </h2>
-      <p style = "margin-left: 5%; margin-right:5%"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque imperdiet volutpat ligula, a placerat augue mollis eget. Mauris vitae sapien non tellus tempor dignissim sed eget felis. Pellentesque sem purus, venenatis sit amet ex ut, aliquam ultricies nisi. Vestibulum commodo metus a est aliquam consectetur. Nunc augue lectus, suscipit aliquet justo at, ultricies finibus ipsum. Maecenas varius faucibus pellentesque. Nam condimentum auctor sapien, sit amet dictum dui aliquet a. Etiam lacus augue, faucibus ut finibus et, posuere non dolor. Quisque maximus nisi condimentum diam varius condimentum. Nullam risus leo, mattis quis congue vitae, semper a ex. Cras in velit et mi lacinia fermentum et nec enim. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum vestibulum vehicula justo, et rutrum ipsum efficitur ut. </p>
+      <p id = "about-descript"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque imperdiet volutpat ligula, a placerat augue mollis eget. Mauris vitae sapien non tellus tempor dignissim sed eget felis. Pellentesque sem purus, venenatis sit amet ex ut, aliquam ultricies nisi. Vestibulum commodo metus a est aliquam consectetur. Nunc augue lectus, suscipit aliquet justo at, ultricies finibus ipsum. Maecenas varius faucibus pellentesque. Nam condimentum auctor sapien, sit amet dictum dui aliquet a. Etiam lacus augue, faucibus ut finibus et, posuere non dolor. Quisque maximus nisi condimentum diam varius condimentum. Nullam risus leo, mattis quis congue vitae, semper a ex. Cras in velit et mi lacinia fermentum et nec enim. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum vestibulum vehicula justo, et rutrum ipsum efficitur ut. </p>
       <br>
       <h2> Founder </h2>
       <div>
-      <img src="placeholder.png" style="width: 50%; height:40%;float:left;">
-      <p style = "margin-left: 5%; margin-right:5%"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque imperdiet volutpat ligula, a placerat augue mollis eget. Mauris vitae sapien non tellus tempor dignissim sed eget felis. Pellentesque sem purus, venenatis sit amet ex ut, aliquam ultricies nisi. Vestibulum commodo metus a est aliquam consectetur. Nunc augue lectus, suscipit aliquet justo at, ultricies finibus ipsum. Maecenas varius faucibus pellentesque. Nam condimentum auctor sapien, </p>
+      <img id = "founder-pic" src="placeholder.png">
+      <p id = "about-descript"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque imperdiet volutpat ligula, a placerat augue mollis eget. Mauris vitae sapien non tellus tempor dignissim sed eget felis. Pellentesque sem purus, venenatis sit amet ex ut, aliquam ultricies nisi. Vestibulum commodo metus a est aliquam consectetur. Nunc augue lectus, suscipit aliquet justo at, ultricies finibus ipsum. Maecenas varius faucibus pellentesque. Nam condimentum auctor sapien, </p>
       </div>
       <p style="clear:both">
       <h2> History </h2>
-      <p style = "margin-left: 5%; margin-right:5%"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque imperdiet volutpat ligula, a placerat augue mollis eget. Mauris vitae sapien non tellus tempor dignissim sed eget felis. Pellentesque sem purus, venenatis sit amet ex ut, aliquam ultricies nisi. Vestibulum commodo metus a est aliquam consectetur. Nunc augue lectus, suscipit aliquet justo at, ultricies finibus ipsum. Maecenas varius faucibus pellentesque. Nam condimentum auctor sapien, sit amet dictum dui aliquet a. Etiam lacus augue, faucibus ut finibus et, posuere non dolor. Quisque maximus nisi condimentum diam varius condimentum. Nullam risus leo, mattis quis congue vitae, semper a ex. Cras in velit et mi lacinia fermentum et nec enim. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum vestibulum vehicula justo, et rutrum ipsum efficitur ut. </p>
+      <p id = "about-descript"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque imperdiet volutpat ligula, a placerat augue mollis eget. Mauris vitae sapien non tellus tempor dignissim sed eget felis. Pellentesque sem purus, venenatis sit amet ex ut, aliquam ultricies nisi. Vestibulum commodo metus a est aliquam consectetur. Nunc augue lectus, suscipit aliquet justo at, ultricies finibus ipsum. Maecenas varius faucibus pellentesque. Nam condimentum auctor sapien, sit amet dictum dui aliquet a. Etiam lacus augue, faucibus ut finibus et, posuere non dolor. Quisque maximus nisi condimentum diam varius condimentum. Nullam risus leo, mattis quis congue vitae, semper a ex. Cras in velit et mi lacinia fermentum et nec enim. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum vestibulum vehicula justo, et rutrum ipsum efficitur ut. </p>
       <h2> Partnerships </h2>
       <h3> Partner #1 <h3>
     </center>
@@ -112,18 +72,18 @@
 <div id="Page3" style="display:none">
   <nav>
     <div class="nav-wrapper">
-      <h1 id = "logo" style="font-size:2vw;">Organization Name</h1>
+      <h1 id = "logo">Organization Name</h1>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li><a href="#" onclick="return show('Page1','Page3');">HOME</a></li>
-        <li>  <a href="#" onclick="return show('Page2','Page3');">ABOUT</a></li>
-        <li>  <a href="#">CONTACT</a></li>
+        <li><a href="#" onclick="return show('Page2','Page3');">ABOUT</a></li>
+        <li><a href="#">CONTACT</a></li>
       </ul>
     </div>
   </nav>
   <div>
     <center>
       <br>
-      <h1 style="font-size:5vw;color:#76323F;"> CONTACT [ORG NAME] </h1>
+      <h1 id="org-name2"> CONTACT [ORG NAME] </h1>
       <br>
       <h3> email: </h3>
       <br>
