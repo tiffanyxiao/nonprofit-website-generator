@@ -4,18 +4,18 @@
   left:20px;
   height:40px;
   overflow:hidden;
-  color: #F78888;
+  color: #color1;
   font-size:2vw;
 }
 
 .org-name2{
     font-size:5vw;
-    color:#90CCF4;
+    color:#color2;
 }
 
 .about-header{
     font-size:5vw;
-    color:#90CCF4;
+    color:#color2;
 }
 
 .about-descript{
@@ -29,19 +29,19 @@ img{
 }
 
 body{
-  background-color: #ECECEC;
+  background-color: #color3;
 }
 * {
     padding: 0;
     margin: 0;
     font-family: 'Helvetica';
-    color: black;
+    color: #color6;
 }
 h2 {
-  color: #F3D250;
+  color: #color4;
 }
 nav{
-    background-color: #FFFFFF;
+    background-color: #color7;
     text-align: right;
     padding: 20px;
 }
@@ -51,11 +51,11 @@ nav li {
     padding-top: 1px;
 }
 nav li a{
-    color: #F3D250;
+    color: #color4;
     padding: 11px;
     text-decoration: none;
 }
 nav li a:hover{
     background-color: white;
-    color: #5DA2D5;
+    color: #color5;
 }
