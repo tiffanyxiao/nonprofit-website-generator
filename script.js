@@ -99,8 +99,4 @@ function generateCode(e){
   // get current div
   let div = document.getElementById('html-code-holder');
   div.textContent = head+themeCode+cssCode+homePage+aboutPage+contactPage;
-
-  // get current div
-  let div2 = document.getElementById('Page3');
-  div2.innerHTML = head+themeCode+cssCode+homePage+aboutPage+contactPage;
 }

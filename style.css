@@ -1,4 +1,4 @@
-.logo{
+.logo2{
   position:absolute;
   top:20px;
   left:20px;
@@ -8,22 +8,22 @@
   font-size:2vw;
 }
 
-.org-name2{
+.org-name22{
     font-size:5vw;
     color:#E85A4F;
 }
 
-.about-header{
+.about-header2{
     font-size:5vw;
     color:#E85A4F;
 }
 
-.about-descript{
+.about-descript2{
     margin-left: 5%;
     margin-right:5%
 }
 
-img{
+.img{
     width:70%;
     height:60%;
 }
@@ -37,28 +37,28 @@ body{
     font-family: 'Helvetica';
     color: black;
 }
-h2 {
+.h2{
   color: #6E6658;
 }
-h3 {
+.h3 {
   color: #E98074;
 }
-nav{
+.nav{
     background-color: #D8C3A5;
     text-align: right;
     padding: 20px;
 }
-nav li {
+.nav li {
     display: inline-block;
     margin: 0 8px;
     padding-top: 1px;
 }
-nav li a{
+.nav li a{
     color: #6E6658;
     padding: 11px;
     text-decoration: none;
 }
-nav li a:hover{
+.nav li a:hover{
     background-color: white;
     color: #373737;
 }
