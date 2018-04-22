@@ -99,4 +99,9 @@ function generateCode(e){
   // get current div
   let div = document.getElementById('html-code-holder');
   div.textContent = head+themeCode+cssCode+homePage+aboutPage+contactPage;
+
+  // show preview button
+  var buttonDiv = document.getElementById("buttonDisplay");
+
+  buttonDiv.innerHTML = "<br><a style = \"display:inline\" id = \"Page3button\" href=\"#\" onclick=\"return show('Page3','Page1');\">Click Here to Preview Your Website</a><br><br>";
 }
