@@ -31,11 +31,86 @@
       </p>
     </div>
     <!-- Form -->
-    <div>
+    <br>
+    <div style = "margin-left:40px; margin-right:40px;">
+      <form>
+        <fieldset>
+          <legend> Fill Out This Form</legend>
+          <div>
+            <label for="org_name">Name of Organization</label>
+            <input type="text" name="org_name" value="Input Org Name Here" id="org_name">
+          </div>
+          <div>
+            <label for="mission_statement">Mission Statement</label> <br>
+            <textarea name = "mission_statement" id = "mission_statement" cols="40" rows="5"> Input Mission Statement Here </textarea>
+          </div>
+          <div>
+            <label for="description">Description</label> <br>
+            <textarea name = "description" id = "description" cols="40" rows="5"> Input Description Here</textarea>
+          </div>
+          <div>
+            <label for="founder_name">Founder Description</label><br>
+            <textarea name = "founder_descript" id = "founder_descript" cols="40" rows="5"> Input Founder Description Here</textarea>
+            <!-- add image -->
+            <br>
+            <label for="founder_image">Link to Image of Founder</label>
+            <input name = "founder_image" type="url" value="https://cdn.vox-cdn.com/images/verge/default-avatar.v989902574302a6378709709f7baab789b242ebbb.gif" id="founder_image">
+          </div>
+          <div>
+            <label for="found_date">Date of Founding</label>
+            <input name = "found_date" type="date" value ="2018-04-21" id="found_date">
+          </div>
+          <div>
+            <label for="main_image">Link to Image of Organization</label>
+            <input name = "main_image" type="url" value="https://www.wpfreeware.com/wp-content/uploads/2014/09/placeholder-images.jpg" id="main_image">
+          </div>
+          <div>
+            <label for="history">Description of History</label> <br>
+            <textarea name = "history" id = "history" cols="40" rows="5"> Input History Here </textarea>
+          </div>
+          <div>
+            <label for="partners">Partners</label> <br>
+            <textarea name = "partners" id = "partners" cols="30" rows="2"> Input Partners Here </textarea>
+          </div>
+          <div>
+            <label for="contact_email">Contact Email</label>
+            <input type="text" name="contact_email" value="Input Contact Email Here" id="contact_email">
+            <br>
+            <label for="contact_number">Contact Phone Number</label>
+            <input type="text" name="contact_number" value="Input Contact Number Here" id="contact_number">
+          </div>
+          <div>
+            <label for="colors">Colors</label> <br>
+            <select name = "colors">
+              <option value="Colorful">Colorful</option>
+              <option value="Simple">Simple</option>
+              <option value="Professional">Professional</option>
+            </select>
+          </div>
+          <div>
+            <label for="themes">Themes</label> <br>
+            <select name = "themes">
+              <option value="Basic">Basic</option>
+              <option value="Emphasis">Emphasis</option>
+            </select>
+          </div>
+          <div>
+              <button>Submit</button>
+          </div>
+        </fieldset>
+      </form>
     </div>
     <!-- HTML Chunk -->
-    <div>
+    <br>
+    <div style = "margin-left:40px; margin-right:40px;">
+      <fieldset>
+        <legend> HTML Code Generated </legend>
+        <h2>Copy HTML code from here.</h2>
+        <div id = "html-code-holder">
+        </div>
+      </fieldset>
     </div>
     </center>
   </body>
+  <script src="script.js"></script>
 <html>
