@@ -2,8 +2,21 @@
   <head>
     <link rel = "stylesheet" type = "text/css" href = "style.css" />
     <title> GenNow </title>
+    <script>
+      function show(shown, hidden) {
+        document.getElementById(shown).style.display='block';
+        document.getElementById(hidden).style.display='none';
+        // get text from div
+        let div = document.getElementById('html-code-holder');
+        // get current div
+        let div2 = document.getElementById('Page3');
+        div2.innerHTML = div.textContent;
+        return false;
+      }
+    </script>
   </head>
   <body>
+    <div id="Page1">
     <h1 class = "logo">GenNow</h1>
     <!-- Navbar -->
     <div>
@@ -81,7 +94,7 @@
           </div>
           <div>
             <label for="colors">Colors</label> <br>
-            <select name = "colors">
+            <select id = "colors" name = "colors">
               <option value="Colorful">Colorful</option>
               <option value="Simple">Simple</option>
               <option value="Professional">Professional</option>
@@ -89,7 +102,7 @@
           </div>
           <div>
             <label for="themes">Themes</label> <br>
-            <select name = "themes">
+            <select id = "themes" name = "themes">
               <option value="Basic">Basic</option>
               <option value="Emphasis">Emphasis</option>
             </select>
@@ -109,6 +122,11 @@
         <div id = "html-code-holder">
         </div>
       </fieldset>
+    </div>
+    <!-- Display Generated Code -->
+    <a href="#" onclick="return show('Page3','Page1');">Click Here to Preview Your Website</a>
+    </div>
+    <div id="Page3" style="display:none">
     </div>
     </center>
   </body>

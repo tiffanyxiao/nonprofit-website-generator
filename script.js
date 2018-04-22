@@ -18,6 +18,9 @@ function generateCode(e){
   let historyDescriptField = document.querySelector('#history');
   let partnershipsField = document.querySelector('#partners');
   let emailField = document.querySelector('#contact_email');
+  let phoneNumberField = document.querySelector('#contact_number');
+  let themeField = document.querySelector('#themes');
+  let colorField = document.querySelector('#colors');
 
   // initialize homePage parts
   let orgName = orgNameField.value;
@@ -32,11 +35,11 @@ function generateCode(e){
   let partnerships = partnershipsField.value;
   // contactPage parts
   let email = emailField.value;
-  let phoneNumber = "888-888-8888";
+  let phoneNumber = phoneNumberField.value;
   // get selected theme and color
   let styleSheet = "style.css";
-  let theme = "Emphasis";
-  let colorScheme = "Professional";
+  let theme = themeField.value;
+  let colorScheme = colorField.value;
   // select theme css code
   let themeCode = "";
   if (theme == "Basic"){
@@ -96,4 +99,8 @@ function generateCode(e){
   // get current div
   let div = document.getElementById('html-code-holder');
   div.textContent = head+themeCode+cssCode+homePage+aboutPage+contactPage;
+
+  // get current div
+  let div2 = document.getElementById('Page3');
+  div2.innerHTML = head+themeCode+cssCode+homePage+aboutPage+contactPage;
 }
