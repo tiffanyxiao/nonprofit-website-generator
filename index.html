@@ -31,24 +31,25 @@
         </div>
       </nav>
     </div>
-    <center>
     <!-- Description -->
-    <div>
-      <br>
-      <h1 class = "org-name22"> GenNow </h1>
-      <br>
-      <h2 class = "h2"> A Simple Website Generator made for Non-Profits</h2>
-      <br>
-      <p style = "margin-left:10px;margin-right:10px">
-      Need a website? Just fill out the form below with information about your organization, and you'll get the HTML code you need instantly. Check out <a href = "HowTo.html"> this page</a> to see how to host your website after generating your code.
-      </p>
-    </div>
+    <center>
+      <div>
+        <br>
+        <h1 class = "org-name22"> GenNow </h1>
+        <br>
+        <h2 class = "h2"> A Simple Website Generator made for Non-Profits</h2>
+        <br>
+        <p style = "margin-left:10px;margin-right:10px">
+        Need a website? Just fill out the form below with information about your organization, and you'll get the HTML code you need instantly. Check out <a href = "HowTo.html"> this page</a> to see how to host your website after generating your code.
+        </p>
+      </div>
+    </center>
     <!-- Form -->
     <br>
     <div style = "margin-left:40px; margin-right:40px;">
       <form>
         <fieldset>
-          <legend> Fill Out This Form</legend>
+          <legend style="text-align: center; font-size: 30px;"> Fill Out This Form</legend>
           <div>
             <label for="org_name">Name of Organization</label>
             <input type="text" name="org_name" value="Input Org Name Here" id="org_name">
@@ -94,18 +95,22 @@
           </div>
           <div>
             <label for="colors">Colors</label> <br>
-            <select id = "colors" name = "colors">
-              <option value="Colorful">Colorful</option>
-              <option value="Simple">Simple</option>
-              <option value="Professional">Professional</option>
-            </select>
+            <div class="styled-select blue semi-square">
+              <select id = "colors" name = "colors">
+                <option value="Colorful">Colorful</option>
+                <option value="Simple">Simple</option>
+                <option value="Professional">Professional</option>
+              </select>
+            </div>
           </div>
           <div>
             <label for="themes">Themes</label> <br>
-            <select id = "themes" name = "themes">
-              <option value="Basic">Basic</option>
-              <option value="Emphasis">Emphasis</option>
-            </select>
+            <div class="styled-select blue semi-square">
+              <select id = "themes" name = "themes">
+                <option value="Basic">Basic</option>
+                <option value="Emphasis">Emphasis</option>
+              </select>
+            </div>
           </div>
           <div>
               <button>Submit</button>
@@ -114,17 +119,23 @@
       </form>
     </div>
     <!-- HTML Chunk -->
+    <center>
     <br>
     <div style = "margin-left:40px; margin-right:40px;">
       <fieldset>
-        <legend> HTML Code Generated </legend>
+        <legend style="font-size: 30px;"> HTML Code Generated </legend>
         <h2 class = "h2">Copy HTML code from here.</h2>
         <div id = "html-code-holder">
+          <p style = "color:red;"> No information has been submitted yet! Fill out the form and press submit to generate your website! </p>
         </div>
+        <br>
+        <a id = "Page3" href="#" onclick="return show('Page3','Page1');">Click Here to Preview Your Website</a>
+        <br>
+        <br>
       </fieldset>
     </div>
+    <br>
     <!-- Display Generated Code -->
-    <a href="#" onclick="return show('Page3','Page1');">Click Here to Preview Your Website</a>
     </div>
     <div id="Page3" style="display:none">
     </div>
