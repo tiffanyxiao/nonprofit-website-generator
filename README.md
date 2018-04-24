@@ -34,4 +34,4 @@ Contains all color themes utilized in the project.
 ## Logical Errors
 Some issues we will attempt to address in our next version include:
 * Addressing empty fields - currently the form does not have any "empty" fields since we utilize values/placeholders (the user would have to physically remove the placeholder). This causes a logical error, as fields would be missing but there may still be headers (i.e. a header called "Founder" but no description of the founder).
-* Optional fields - implement the functionality of allowing the user to skip certain fields on the form. 
+* Optional fields - implement the functionality of allowing the user to skip certain fields on the form.
