@@ -1,6 +1,9 @@
 # nonprofit-website-generator
 A project aimed to help nonprofit organizations generate a basic website for their organization.
 
+## GenNow
+The name of our project is currently "GenNow" (although the repository is "nonprofit-website-generator"). "Gen"erate your project "Now"! 
+
 ## Authors
 Tiffany Xiao and Khadidja Fares
 
