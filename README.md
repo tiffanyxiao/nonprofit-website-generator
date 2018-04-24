@@ -2,7 +2,7 @@
 A project aimed to help nonprofit organizations generate a basic website for their organization.
 
 ## GenNow
-The name of our project is currently "GenNow" (although the repository is "nonprofit-website-generator"). "Gen"erate your website "Now"! 
+The name of our project is currently "GenNow" (although the repository is "nonprofit-website-generator"). "Gen"erate your website "Now"!
 
 ## Authors
 Tiffany Xiao and Khadidja Fares
@@ -25,13 +25,13 @@ The templates folder contains all templates utilized - all theme, color and html
 ### htmlStrip
 The htmlStrip folder contains a python program that strips a text document of its white space and escapes all quotation marks. This is useful to clean the templates utilized in the main javascript file - simply copy and paste the outputted strings by the htmlStrip program and utilize them as the string variables that will be replaced with the inputted field information.
 
-## Template Test
+### Template Test
 Before implementing the GUI, the files in this folder was used to test the replacement functionalities.
 
-## Themes
+### Themes
 Contains all color themes utilized in the project.
 
-# Logical Errors
+## Logical Errors
 Some issues we will attempt to address in our next version include:
 * Website preview - currently our website preview only previews the first page of the generated website, and the javascript for the generated website does not work on our main website.
 * Optional fields - implement the functionality of allowing the user to skip certain fields on the form.
