@@ -41,3 +41,7 @@ Some issues we will attempt to address in our next version include:
 * Optional fields - implement the functionality of allowing the user to skip certain fields on the form.
 
 Note: In the most recent version available on Github, these issues have been addressed. These errors will remain pointed out for the sake of the FP3 submission for the assignment. Progress has been made since the submission, in which these errors are addressed, for FP4.
+
+## Elegance 
+
+## Independent Learning

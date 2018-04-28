@@ -31,9 +31,11 @@ def readFile():
     return text
 
 def main():
+    ''' Main function to run all helper functions and print replaced text'''
     text = readFile()
     replaceText = replaceHtml(text)
     writeFile(replaceText)
     for line in replaceText:
         print(line, end = "")
+
 main()

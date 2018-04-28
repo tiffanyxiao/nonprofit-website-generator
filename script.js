@@ -1,7 +1,7 @@
 "use strict"; // enable modern JS features
 
 // javascript for slideshow display (source: https://www.w3schools.com/howto/howto_js_slideshow.asp)
-var slideIndex = 1;
+let slideIndex = 1;
 showSlides(slideIndex);
 
 function plusSlides(n) {
@@ -13,9 +13,9 @@ function currentSlide(n) {
 }
 
 function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
@@ -41,7 +41,6 @@ $('#orgForm').submit(function () {
 
 // function to generate the code with information from fields
 function generateCode(e){
-
   // get fields from form
   let orgNameField = document.querySelector('#org_name');
   let imageField = document.querySelector('#main_image');
@@ -110,7 +109,7 @@ function generateCode(e){
     color7 = "254E58";
   }
 
-  // intialize variable that will contain all html code
+  // intialize letiable that will contain all html code
   let html = "";
 
   // create a function to add optional fields to html code
@@ -124,7 +123,7 @@ function generateCode(e){
     }
   }
 
-  // store strings for HTML code into variables
+  // store strings for HTML code into letiables
   let head = "<html><head><title> ##ORG NAME## </title><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><link rel = \"stylesheet\" type = \"text/css\" href = \"style.css\" /><script>function show(shown, hidden) {document.getElementById(shown).style.display='block';document.getElementById(hidden).style.display='none';return false;}</script><style>";
   let cssCode = "</style></head><body id = \"pages\">";
   // add themeCode, cssCode and head together into html
@@ -166,7 +165,7 @@ function generateCode(e){
   div.textContent = html;
 
   // add and show preview button
-  var buttonDiv = document.getElementById("buttonDisplay");
+  let buttonDiv = document.getElementById("buttonDisplay");
   buttonDiv.innerHTML = "<br><a style = \"display:inline\" id = \"Page3button\" href=\"#\" onclick=\"return show('Page3','Page1');\">Click Here to Preview Your Website</a><br><br>";
 
   return false;
