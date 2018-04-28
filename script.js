@@ -114,10 +114,11 @@ function generateCode(e){
   let html = "";
 
   // create a function to add optional fields to html code
+  // first initialize the field and code components
   let field = "";
   let code = "";
   function addOptional(field, code){
-    // check if field is empty
+    // check if field is empty, if not then add the code to the html code
     if(field){
       html = html + code;
     }
@@ -164,7 +165,7 @@ function generateCode(e){
   let div = document.getElementById('html-code-holder');
   div.textContent = html;
 
-  // show preview button
+  // add and show preview button
   var buttonDiv = document.getElementById("buttonDisplay");
   buttonDiv.innerHTML = "<br><a style = \"display:inline\" id = \"Page3button\" href=\"#\" onclick=\"return show('Page3','Page1');\">Click Here to Preview Your Website</a><br><br>";
 

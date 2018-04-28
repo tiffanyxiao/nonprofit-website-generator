@@ -25,6 +25,9 @@ The templates folder contains all templates utilized - all theme, color and html
 ### htmlStrip
 The htmlStrip folder contains a python program that strips a text document of its white space and escapes all quotation marks. This is useful to clean the templates utilized in the main javascript file - simply copy and paste the outputted strings by the htmlStrip program and utilize them as the string variables that will be replaced with the inputted field information.
 
+Python version: python 3
+Run the python program using: python htmlStrip.py
+
 ### Template Test
 Before implementing the GUI, the files in this folder was used to test the replacement functionalities.
 
@@ -36,4 +39,4 @@ Some issues we will attempt to address in our next version include:
 * Addressing empty fields - currently the form does not have any "empty" fields since we utilize values/placeholders (the user would have to physically remove the placeholder). This causes a logical error, as fields would be missing but there may still be headers (i.e. a header called "Founder" but no description of the founder).
 * Optional fields - implement the functionality of allowing the user to skip certain fields on the form.
 
-Note: In the most recent version available on Github, these issues have been addressed. These errors will remain pointed out for the sake of the FP3 submission for the assignment. Progress has been made since the submission, in which these errors are addressed, for FP4. 
+Note: In the most recent version available on Github, these issues have been addressed. These errors will remain pointed out for the sake of the FP3 submission for the assignment. Progress has been made since the submission, in which these errors are addressed, for FP4.
