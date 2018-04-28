@@ -1,6 +1,6 @@
 "use strict"; // enable modern JS features
 
-// javascript for slideshow display (source: https://www.w3schools.com/howto/howto_js_slideshow.asp)
+// javascript for slideshow display 
 let slideIndex = 1;
 showSlides(slideIndex);
 
