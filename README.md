@@ -35,3 +35,5 @@ Contains all color themes utilized in the project.
 Some issues we will attempt to address in our next version include:
 * Addressing empty fields - currently the form does not have any "empty" fields since we utilize values/placeholders (the user would have to physically remove the placeholder). This causes a logical error, as fields would be missing but there may still be headers (i.e. a header called "Founder" but no description of the founder).
 * Optional fields - implement the functionality of allowing the user to skip certain fields on the form.
+
+Note: In the most recent version available on Github, these issues have been addressed. These errors will remain pointed out for the sake of the FP3 submission for the assignment. Progress has been made since the submission, in which these errors are addressed, for FP4. 
