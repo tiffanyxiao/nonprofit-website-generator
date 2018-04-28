@@ -1,6 +1,13 @@
+/* Description of Javascript file:
+ *
+ * The file begins with some functions to enable the slideshow features.
+ * Then, the rest of the file is the javascript code required to generate
+ * the html code.
+ */
+
 "use strict"; // enable modern JS features
 
-// javascript for slideshow display 
+// javascript for slideshow display
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -28,6 +35,7 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
+// CODE TO GENERATE HTML CODE BEGINS HERE:
 // get submit button
 let submitBtn = document.querySelector('#submitbutton');
 
@@ -74,7 +82,8 @@ function generateCode(e){
   let styleSheet = "style.css";
   let theme = themeField.value;
   let colorScheme = colorField.value;
-  // select theme css code
+
+  // select the appropriate css code for the indicated theme
   let themeCode = "";
   if (theme == "Basic"){
     themeCode = ".logo{position:absolute;top:20px;left:20px;height:40px;overflow:hidden;color: #color1;font-size:2vw;}.org-name2{font-size:5vw;color:#color2;}.about-header{font-size:5vw;color:#color2;}.about-descript{margin-left: 5%;margin-right:5%}img{width:70%;height:60%;}body{background-color: #color3;}* {padding: 0;margin: 0;font-family: 'Helvetica';color: #color6;}h2 {color: #color4;}nav{background-color: #color7;text-align: right;padding: 20px;}nav li {display: inline-block;margin: 0 8px;padding-top: 1px;}nav li a{color: #color4;padding: 11px;text-decoration: none;}nav li a:hover{background-color: white;color: #color5;}";
@@ -83,7 +92,7 @@ function generateCode(e){
     themeCode = ".logo{text-align:center;top:10px;left:10px;height:40px;padding: 10px;padding-top: 15px;color: #color1;font-size:4vw;}.org-name2{font-size:5vw;color:#color2;}.about-header{font-size:5vw;color:#color2;}.about-descript{margin-left: 5%;margin-right:5%}body{background-color: #color3;}* {padding: 0;margin: 0;font-family: Helvetica;color: black;}h2 {color: #color4;}nav{text-align: center;padding: 10px;padding-top: 20px;}nav li {display: inline-block;margin: 0 8px;padding-top: 1px;}nav li a{color: #color4;padding: 11px;text-decoration: none;}nav li a:hover{background-color: white;color: #color5;}";
   }
 
-  // select colors (default = simple colors)
+  // select colors which will replace the template's colors (default = simple colors)
   let color1 = "C0B283";
   let color2 = "373737";
   let color3 = "ECECEC";

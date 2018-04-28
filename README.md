@@ -42,6 +42,13 @@ Some issues we will attempt to address in our next version include:
 
 Note: In the most recent version available on Github, these issues have been addressed. These errors will remain pointed out for the sake of the FP3 submission for the assignment. Progress has been made since the submission, in which these errors are addressed, for FP4.
 
-## Elegance 
+## Choices for Elegance and Efficiency
+* Use of single html file containing all pages (instead of multiple pages) - this makes it easier for the client to copy and paste the generated html code onto an external hosting service. It also helps creating a preview simpler. We utilized this "single html file, multiple pages" again as a trick to display the "preview" of the generated website, which is actually just a hidden page on the main page.
+* Efficiency - to reduce the amount of hard coding required for changes in the templates, we created the htmlStrip python programs which can help make pasting hard coded templates into the javascript code faster.
 
 ## Independent Learning
+Skills that were not covered in the class that were learned/utilized in this project:
+* Form submission vs. onlick submission, and how to handle function overriding others in Javascript.
+* Dealing with user entered information (requiring inputs, catching empty inputs, invalid links, etc.) on a form/html
+* Css styling (a large portion of the project is creating a user-friendly interface)
+* Page hiding/showing and multiple "pages" on one html file (this is used in a couple of places throughout the project for elegance, as it is simpler for both the client and the programmer to put all the pages on one single html file)
