@@ -26,6 +26,7 @@ The templates folder contains all templates utilized - all theme, color and html
 The htmlStrip folder contains a python program that strips a text document of its white space and escapes all quotation marks. This is useful to clean the templates utilized in the main javascript file - simply copy and paste the outputted strings by the htmlStrip program and utilize them as the string variables that will be replaced with the inputted field information.
 
 Python version: python 3
+
 Run the python program using: python htmlStrip.py
 
 ### Template Test
