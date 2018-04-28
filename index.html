@@ -1,6 +1,7 @@
-<html>
+<html5>
   <head>
     <link rel = "stylesheet" type = "text/css" href = "style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <title> GenNow </title>
     <script>
       // function to show/hide page
@@ -77,51 +78,52 @@
     <!-- Form -->
     <br>
     <div style = "margin-left:40px; margin-right:40px;">
-      <form>
+      <form id = "orgForm">
         <fieldset>
           <legend style="text-align: center; font-size: 30px;"> Fill Out This Form</legend>
+          <center> Fields with * are required </center>
           <div>
-            <label for="org_name">Name of Organization</label>
-            <input type="text" name="org_name" value="Input Org Name Here" id="org_name">
+            <label for="org_name">Name of Organization*</label>
+            <input type="text" name="org_name" placeholder="Input your organization name here." id="org_name" required/>
           </div>
           <div>
-            <label for="mission_statement">Mission Statement</label> <br>
-            <textarea name = "mission_statement" id = "mission_statement" cols="40" rows="5"> Input Mission Statement Here </textarea>
+            <label for="mission_statement">Mission Statement*</label> <br>
+            <textarea name = "mission_statement" placeholder="Input the mission statement of your organizaton here." id = "mission_statement" cols="40" rows="5" required></textarea>
           </div>
           <div>
-            <label for="description">Description</label> <br>
-            <textarea name = "description" id = "description" cols="40" rows="5"> Input Description Here</textarea>
+            <label for="description">Description of Organization*</label> <br>
+            <textarea name = "description" placeholder="Input a description of your organizaton here."  id = "description" cols="40" rows="5" required></textarea>
           </div>
           <div>
             <label for="founder_name">Founder Description</label><br>
-            <textarea name = "founder_descript" id = "founder_descript" cols="40" rows="5"> Input Founder Description Here</textarea>
+            <textarea name = "founder_descript" placeholder="Input a description of your organization's founder here." id = "founder_descript" cols="40" rows="5"></textarea>
             <!-- add image -->
             <br>
             <label for="founder_image">Link to Image of Founder</label>
-            <input name = "founder_image" type="url" value="https://cdn.vox-cdn.com/images/verge/default-avatar.v989902574302a6378709709f7baab789b242ebbb.gif" id="founder_image">
+            <input name = "founder_image" placeholder = "Input a link to an image of your founder here." type="url" id="founder_image">
           </div>
           <div>
             <label for="found_date">Date of Founding</label>
-            <input name = "found_date" type="date" value ="2018-04-21" id="found_date">
+            <input name = "found_date" type="date" id="found_date">
           </div>
           <div>
             <label for="main_image">Link to Image of Organization</label>
-            <input name = "main_image" type="url" value="https://www.wpfreeware.com/wp-content/uploads/2014/09/placeholder-images.jpg" id="main_image">
+            <input name = "main_image" type="url" placeholder = "Input an image that represents your organization here." id="main_image">
           </div>
           <div>
             <label for="history">Description of History</label> <br>
-            <textarea name = "history" id = "history" cols="40" rows="5"> Input History Here </textarea>
+            <textarea name = "history" id = "history" cols="40" rows="5" placeholder="Input History Here"></textarea>
           </div>
           <div>
             <label for="partners">Partners</label> <br>
-            <textarea name = "partners" id = "partners" cols="30" rows="2"> Input Partners Here </textarea>
+            <textarea name = "partners" id = "partners" cols="30" rows="2" placeholder = " Input Partners Here"></textarea>
           </div>
           <div>
-            <label for="contact_email">Contact Email</label>
-            <input type="text" name="contact_email" value="Input Contact Email Here" id="contact_email">
+            <label for="contact_email">Contact Email*</label>
+            <input type="text" name="contact_email" placeholder="Input an email for contact purposes here" id="contact_email" required/>
             <br>
             <label for="contact_number">Contact Phone Number</label>
-            <input type="text" name="contact_number" value="Input Contact Number Here" id="contact_number">
+            <input type="text" name="contact_number" placeholder="Input a number for contact purposes here" id="contact_number">
           </div>
           <div>
             <label for="colors">Color</label> <br>
@@ -143,7 +145,7 @@
             </div>
           </div>
           <div>
-              <button>Submit</button>
+              <input type="submit" id = "submitbutton">
           </div>
         </fieldset>
       </form>
