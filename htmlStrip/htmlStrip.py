@@ -4,22 +4,22 @@ Version: 4.14.18
 Python version: Python 3
 Description of Program: Python program to help strip html code of white space and escape quotation marks. Automatically reads html.txt file.
 '''
-def writeFile(replaceText):
+def write_file(replace_text):
     ''' Function to write a new html file with replaced text'''
     file = open('htmlCondensed.txt', 'w')
-    for line in replaceText:
+    for line in replace_text:
         file.write(line)
     file.close()
 
-def replaceHtml(text):
+def replace_html(text):
     ''' Function to strip new line characters and escape white space'''
-    replaceText = []
+    replace_text = []
     for line in text:
-        replacePart = line.replace('"','\\"')
-        replaceText.append(replacePart)
-    return replaceText
+        replace_part = line.replace('"','\\"')
+        replace_text.append(replace_part)
+    return replace_text
 
-def readFile():
+def read_file():
     ''' Function to read the file '''
     file = open('html.text', 'r')
     lines = file.readlines()
@@ -32,10 +32,10 @@ def readFile():
 
 def main():
     ''' Main function to run all helper functions and print replaced text'''
-    text = readFile()
-    replaceText = replaceHtml(text)
-    writeFile(replaceText)
-    for line in replaceText:
+    text = read_file()
+    replace_text = replace_html(text)
+    write_file(replace_text)
+    for line in replace_text:
         print(line, end = "")
 
 main()

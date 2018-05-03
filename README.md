@@ -34,13 +34,14 @@ Before implementing the GUI, the files in this folder was used to test the repla
 
 ### Themes
 Contains all color themes utilized in the project.
+Source for these themes: http://blog.visme.co/website-color-schemes/
 
 ## Logical Errors
-Some issues we will attempt to address in our next version include:
+Some issues we identified in FP3 include:
 * Addressing empty fields - currently the form does not have any "empty" fields since we utilize values/placeholders (the user would have to physically remove the placeholder). This causes a logical error, as fields would be missing but there may still be headers (i.e. a header called "Founder" but no description of the founder).
 * Optional fields - implement the functionality of allowing the user to skip certain fields on the form.
 
-Note: In the most recent version available on Github, these issues have been addressed. These errors will remain pointed out for the sake of the FP3 submission for the assignment. Progress has been made since the submission, in which these errors are addressed, for FP4.
+All of these issues have since been resolved.
 
 ## Choices for Elegance and Efficiency
 * Use of single html file containing all pages (instead of multiple pages) - this makes it easier for the client to copy and paste the generated html code onto an external hosting service. It also helps creating a preview simpler. We utilized this "single html file, multiple pages" again as a trick to display the "preview" of the generated website, which is actually just a hidden page on the main page.
@@ -50,5 +51,5 @@ Note: In the most recent version available on Github, these issues have been add
 Skills that were not covered in the class that were learned/utilized in this project:
 * Form submission vs. onlick submission, and how to handle function overriding others in Javascript.
 * Dealing with user entered information (requiring inputs, catching empty inputs, invalid links, etc.) on a form/html
-* Css styling (a large portion of the project is creating a user-friendly interface)
+* CSS styling (a large portion of the project is creating a user-friendly interface)
 * Page hiding/showing and multiple "pages" on one html file (this is used in a couple of places throughout the project for elegance, as it is simpler for both the client and the programmer to put all the pages on one single html file)
