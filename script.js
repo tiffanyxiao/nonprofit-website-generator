@@ -132,7 +132,7 @@ function generateCode(e){
     }
   }
 
-  // store strings for HTML code into letiables
+  // store strings for HTML code into variables
   let head = "<html><head><title> ##ORG NAME## </title><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><link rel = \"stylesheet\" type = \"text/css\" href = \"style.css\" /><script>function show(shown, hidden) {document.getElementById(shown).style.display='block';document.getElementById(hidden).style.display='none';return false;}</script><style>";
   let cssCode = "</style></head><body id = \"pages\">";
   // add themeCode, cssCode and head together into html
